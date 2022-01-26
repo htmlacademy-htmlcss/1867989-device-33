@@ -77,7 +77,7 @@
         <header>
             <h1 class="inner-header-title">Моноподы для селфи</h1>
 
-            <!-- Начало хлебных крошек -->
+    <!-- Начало хлебных крошек -->
 
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
@@ -91,13 +91,13 @@
                 </li>
             </ul>
 
-            <!-- Конец хлебных крошек -->
+    <!-- Конец хлебных крошек -->
 
         </header>
 
         <section>
 
-            <!-- Начало фильтра слева -->
+    <!-- Начало фильтра слева -->
 
             <h2 class="filter-title">Фильтр:</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -161,7 +161,6 @@
                     <ul>
                         <li>
                             <label class="control">
-                                <!-- Не уверен, что value="yes" — это ок? как и ниже value="no" -->
                                 <input class="visually-hidden control-input" type="radio" name="product-group"
                                     value="yes" checked>
                                 <span class="control-mark"></span>
@@ -181,27 +180,34 @@
                 <button class="button" type="submit">Показать</button>
             </form>
 
-            <!-- Конец фильтра слева -->
+    <!-- Конец фильтра слева -->
 
-            <!-- Начало фильтра по центру -->
+    <!-- Начало фильтра по центру -->
 
-            <!-- Здесь не стал добавлять кнопки «v» и «^», как на макете, т.к. не до конца понимаю, что они делают. Предполагаю, что они сортируют новые и старые товары, но решил уточнить — на консультации ещё хочу обговорить этот момент-->
-            <form class="sorting-type">
-                <label class="select-control-title" for="sorting">Сортировка:</label>
-                <select class="select-control" name="sorting" id="sorting">
-                    <option value="popular">Сначала популярные</option>
-                    <option value="cheap">Сначала дешёвые</option>
-                    <option value="expensive">Сначала дорогое</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-            </form>
+            <div class="sorting-wrapper">
+                <span class="sorting-title">Сортировка:</span>
+                <ul class="sorting-select">
+                    <li class="sorting-select-control">Сначала популярные</li>
+                    <li class="sorting-select-control">Сначала недорогие</li>
+                    <li class="sorting-select-control">Сначала дорогие</li>
+                </ul>
+                <ul class="sorting-buttons">
+                    <li class="sorting-button-up"><a class="sorting-button-link"><span class="visually-hidden">По
+                                возрастанию</span></a></li>
+                    <li class="sorting-button-down"><a class="sorting-button-link"><span class="visually-hidden">По
+                                убыванию</span></a></li>
+                </ul>
+            </div>
 
-            <!-- Конец фильтра по центру -->
+    <!-- Конец фильтра по центру -->
 
-            <!-- Начало каталога товаров -->
+    <!-- Начало каталога товаров -->
 
             <ul class="product-list">
                 <li class="product-card">
+                    <a href="product.html" class="product-card-link">
+                        <img class="product-card-image" src="" alt="Любительская селфи-палка">
+                    </a>
                     <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Любительская селфи-палка</h3>
                     </a>
@@ -209,7 +215,7 @@
                 </li>
                 <li class="product-card">
                     <a href="product.html" class="product-card-link">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="" alt="Профессиональная селфи-палка">
                     </a>
                     <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Профессиональная селфи-палка</h3>
@@ -218,7 +224,7 @@
                 </li>
                 <li class="product-card">
                     <a href="product.html" class="product-card-link">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="" alt="Непотопляемая селфи-палка">
                     </a>
                     <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
@@ -227,7 +233,7 @@
                 </li>
                 <li class="product-card">
                     <a href="product.html" class="product-card-link">
-                        <img class="product-card-image" src="" alt="">
+                        <img class="product-card-image" src="" alt="Селфи-палка «Следуй за мной»">
                     </a>
                     <a class="product-card-title-link" href="#">
                         <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
@@ -237,9 +243,9 @@
             </ul>
             <button class="button pagination-show-more" type="button">Загрузить ещё</button>
 
-            <!-- Конец каталога товаров -->
+    <!-- Конец каталога товаров -->
 
-            <!-- Начало пагинации -->
+    <!-- Начало пагинации -->
 
             <ul class="pagination">
                 <li class="pagination-item">
@@ -269,64 +275,65 @@
                 </li>
             </ul>
 
-            <!-- Конец пагинации -->
+    <!-- Конец пагинации -->
 
         </section>
     </main>
 
-     <!-- Начало футера -->
+    <!-- Начало футера -->
 
-  <footer class="page-footer">
-    <h2 class="visually-hidden">Подвал сайта</h2>
-    <section class="footer-left-section">
-      <a href="#">
-        <img class="footer-logo" src="images/logo.svg" width="145px" height="36px" alt="Логотип компании Девайс">
-      </a>
-      <address class="footer-adress">
-        <p class="footer-address-text">Санкт-Петербург, набережная
-          <br>
-          реки Карповки, 5, литера П.
-        </p>
-      </address>
-    </section>
-    <section class="footer-contacts">
-      <ul class="footer-contacts-list">
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="#">Доставка</a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="#">Гарантия</a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Ссылки на социальные сети</h2>
-      <ul>
-        <li class="footer-contacts-item">
-          <a class="footer-button" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-button" href="https://www.instagram.com/htmlacademy">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li class="footer-contacts-item">
-          <a class="footer-button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <a class="footer-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-  </footer>
+    <footer class="page-footer">
+        <h2 class="visually-hidden">Подвал сайта</h2>
+        <section class="footer-left-section">
+            <a href="#">
+                <img class="footer-logo" src="images/logo.svg" width="145px" height="36px"
+                    alt="Логотип компании Девайс">
+            </a>
+            <address class="footer-adress">
+                <p class="footer-address-text">Санкт-Петербург, набережная
+                    <br>
+                    реки Карповки, 5, литера П.
+                </p>
+            </address>
+        </section>
+        <section class="footer-contacts">
+            <ul class="footer-contacts-list">
+                <li class="footer-contacts-item">
+                    <a class="footer-contacts-link" href="#">Доставка</a>
+                </li>
+                <li class="footer-contacts-item">
+                    <a class="footer-contacts-link" href="#">Гарантия</a>
+                </li>
+                <li class="footer-contacts-item">
+                    <a class="footer-contacts-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer-social">
+            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
+            <ul>
+                <li class="footer-contacts-item">
+                    <a class="footer-button" href="https://www.facebook.com/htmlacademy">
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                </li>
+                <li class="footer-contacts-item">
+                    <a class="footer-button" href="https://www.instagram.com/htmlacademy">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                </li>
+                <li class="footer-contacts-item">
+                    <a class="footer-button" href="https://twitter.com/htmlacademy_ru">
+                        <span class="visually-hidden">Twitter</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <a class="footer-contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+    </footer>
 
-  <!-- Конец футера -->
+    <!-- Конец футера -->
 
 </body>
 
