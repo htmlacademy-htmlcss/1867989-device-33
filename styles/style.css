@@ -175,28 +175,15 @@ body {
 	line-height: 50px;
 }
 .slider-description {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 30px;
 	color: #444444;
 }
 .slider-advantages {
 }
 .slider-advantages-top {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 36px;
-	line-height: 30px;
 }
 .slider-advantages-bottom {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
-	line-height: 30px;
 	color: #444444;
 }
 .slider-image-2 {
@@ -319,10 +306,7 @@ body {
 	color: #444444;
 }
 .company-about-delivery {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
+	font-weight: 700;
 	line-height: 20px;
 }
 .company-about-delivery-item {
@@ -352,11 +336,8 @@ body {
 	color: #444444;
 }
 .company-contacts-companyname {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 24px;
-	line-height: 30px;
 }
 .company-adress {
 }
@@ -369,11 +350,8 @@ body {
 }
 
 .company strong {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 24px;
-	line-height: 30px;
 }
 
 .contacts-schedule {
@@ -437,9 +415,7 @@ body {
 }
 
 .footer-address-text {
-	font-family: Rubik, sans-serif;
 	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
 	color: #FFFFFF;
@@ -469,9 +445,6 @@ body {
 	color: rgba(255, 255, 255, 0.3);
 }
 .footer-contacts-phone {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 20px;
 	color: #FFFFFF;
@@ -494,9 +467,6 @@ body {
 .inner-header-title {
 }
 .breadcrumbs {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
 	list-style: none;
@@ -525,9 +495,7 @@ body {
 }
 
 .catalog-filter-title {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 	letter-spacing: -0.02em;
@@ -541,17 +509,11 @@ body {
 .toggle-max {
 }
 .catalog-filter-label {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 15px;
 	line-height: 18px;
 	opacity: 0.3;
 }
 .catalog-filter-input {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 15px;
 	line-height: 18px;
 	text-align: center;
@@ -568,9 +530,6 @@ body {
 .control-mark {
 }
 .control-label {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 19px;
 }
@@ -635,27 +594,17 @@ body {
 .product-card-image {
 }
 .product-card-title-link {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 20px;
 	letter-spacing: -0.02em;
 	text-decoration: none;
-}
-.product-card-title {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 20px;
 	color: #000000;
 }
-.product-card-price {
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
+.product-card-title {
 	font-size: 18px;
+}
+.product-card-price {
 	line-height: 21px;
 	color: #444444;
 }
@@ -679,9 +628,6 @@ body {
 .pagination-link {
 	color: #000000;
 	text-decoration: none;
-	font-family: Rubik, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 20px;
 	opacity: 0.3;
@@ -698,7 +644,7 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 	letter-spacing: 0.2em;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 .pagination-item-ellipsis {
 }
