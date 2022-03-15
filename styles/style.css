@@ -1712,6 +1712,7 @@ transition: 0.3s;
 	gap: 40px;
 	list-style: none;
 	margin: 0;
+	margin-bottom: 44px;
 	padding: 0;
 }
 
@@ -1849,6 +1850,7 @@ transition: 0.3s;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 
+	margin: 0 40px;
 	width: 760px;
 	height: 55px;
 	background-color: #ffffff;
@@ -1970,4 +1972,4 @@ transition: 0.3s;
 }
 .pagination-next {
 	opacity: 1;
-}
+} 
