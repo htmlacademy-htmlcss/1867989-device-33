@@ -19,6 +19,7 @@
 			</a>
 			<div class="upper-menu">
 				<form action="https://echo.htmlacademy.ru/courses" method="GET" class="search">
+					<label for="search-site" class="search-icon"></label>
 					<input type="search" name="sitesearch" id="search-site" placeholder="Текст поиска">
 					<input type="submit" value="Найти">
 				</form>
@@ -31,6 +32,31 @@
 					</li>
 					<li class="navigation-item">
 						<a href="#" class="navigation-link">Корзина</a>
+						<div class="popover popover-cart">
+							<div class="popover-content">
+								<ul class="cart-items-list">
+									<li class="cart-item">
+										<a class="cart-image-link" href="#"><img class="cart-item-image"
+												src="content/amateur-selfie-stick.jpg" alt="Любительская селфи палка" width="39"
+												height="43"></a>
+										<p class="cart-item-name">Любительская <br> селфи-палка</p>
+										<button class="cart-item-close"><span class="visually-hidden">Удалить из корзины</span></button>
+									</li>
+									<li class="cart-item">
+										<a class="cart-image-link" href="#"><img class="cart-item-image"
+												src="content/professional-selfie-stick.jpg" alt="Любительская селфи палка" width="39"
+												height="43"></a>
+										<p class="cart-item-name">Профессиональная <br> селфи-палка</p>
+										<button class="cart-item-close"><span class="visually-hidden">Удалить из корзины</span></button>
+									</li>
+								</ul>
+								<ul class="cart-total">
+									<li class="cart-total-items">Товаров: 2</li>
+									<li class="cart-total-price">Сумма: 2000 ₽</li>
+								</ul>
+								<button class="cart-open-button">Открыть корзину</button>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -87,19 +113,21 @@
 				<div class="container">
 					<div class="slider-wrapper">
 						<div class="slide-1">
-							<button class="slider-button slider-prev" type="button">
-								<span class="visually-hidden">Предыдущее фото</span>
-							</button>
-							<img class="slider-image-1" src="content/slider-quadrocopter.png" width="560" height="560"
+							<img class="slider-image slider-image-1" src="content/slider-quadrocopter.png" width="560" height="560"
 								alt="Квадрокоптер">
-							<button class="slider-button slider-next" type="button">
-								<span class="visually-hidden">Следующее фото</span>
-							</button>
+							<div class="slider-controls">
+								<button class="slider-button slider-prev" type="button">
+									<span class="visually-hidden">Предыдущее фото</span>
+								</button>
+								<button class="slider-button slider-next" type="button">
+									<span class="visually-hidden">Следующее фото</span>
+								</button>
+							</div>
 							<div class="slider-content-wrapper">
 								<p class="slider-name"><strong>Порхает как бабочка, жалит как пчела!</strong></p>
 								<p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
 									замаскированным под стандартную камеру.</p>
-								<a class="slider-button more-info-button" href="#">Подробнее</a>
+								<a class="more-info-button" href="#">Подробнее</a>
 								<table class="slider-advantages">
 									<tr>
 										<td class="slider-advantages-top">800 м</td>
@@ -168,19 +196,19 @@
 				<div class="container">
 					<ol class="slider-pagination">
 						<li class="slider-pagination-item">
-							<span class="slider-pagination-button slider-pagination-button-current">
+							<button class="slider-pagination-button slider-pagination-button-current">
 								<span class="visually-hidden">1 фото</span>
-							</span>
+							</button>
 						</li>
 						<li class="slider-pagination-item">
-							<span class="slider-pagination-button">
+							<button class="slider-pagination-button">
 								<span class="visually-hidden">2 фото</span>
-							</span>
+							</button>
 						</li>
 						<li class="slider-pagination-item">
-							<span class="slider-pagination-button">
+							<button class="slider-pagination-button">
 								<span class="visually-hidden">3 фото</span>
-							</span>
+							</button>
 						</li>
 					</ol>
 				</div>
@@ -441,6 +469,74 @@
 	</footer>
 
 	<!-- Конец футера -->
+
+	<div class="modal-container modal-container-close">
+		<div class="modal modal-auth">
+			<section class="modal-content">
+				<div class="modal-title-wrapper">
+					<h2 class="modal-title">Доставка под заказ</h2>
+					<button class="modal-close-button">
+						<span class="visually-hidden">Закрыть</span>
+					</button>
+				</div>
+				<form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+					<div class="form-first-row">
+						<label for="auth-name">Ваше имя:
+							<p class="field-group">
+								<input class="auth-name-field field" type="text" id="auth-name" name="auth-name"
+									placeholder="Введите имя">
+							</p>
+						</label>
+						<label for="auth-email">Ваш e-mail:
+							<p class="field-group">
+								<input class="auth-email-field field" type="email" id="auth-email" name="auth-email"
+									placeholder="почта">
+							</p>
+							<p class="email-field-error">Забавный у вас адрес</p>
+						</label>
+					</div>
+
+					<div class="form-second-row">
+						<label for="auth-delivery">Что нужно привезти:
+							<p class="field-group">
+								<input class="auth-delivery-field field" type="text" id="auth-delivery" name="auth-delivery"
+									placeholder="В свободной форме">
+							</p>
+						</label>
+						<span class="auth-quantity-wrapper">
+							<label class="auth-quantity-wrapper" for="auth-quantity">Количество:
+								<span class="tooltip">
+									<button class="tooltip-toggle" aria-labelledby="tooltip-label">
+										<svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="13" cy="13" r="13" fill="#FFE17F" />
+											<path d="M14 7H12V9H14V7Z" fill="black" />
+											<path d="M14 11H12V19H14V11Z" fill="black" />
+										</svg>
+									</button>
+									<span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+								</span>
+								<p class="field-group quantity-buttons-wrapper">
+									<button class="quantity-minus-button">
+										<svg class="minus-icon" width="16" height="2" viewBox="0 0 16 2" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16 0H0V2H16V0Z" />
+										</svg>
+									</button>
+									<input class="quantity-number" type="number" id="auth-number" name="auth-number" placeholder="1">
+									<button class="quantity-plus-button">
+										<svg class="plus-icon" width="16" height="16" viewBox="0 0 16 16"
+											xmlns="http://www.w3.org/2000/svg">
+											<path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
+										</svg>
+									</button>
+								</p>
+							</label>
+						</span>
+					</div>
+					<button class="auth-button">Отправить</button>
+				</form>
+			</section>
+		</div>
+	</div>
 
 </body>
 
