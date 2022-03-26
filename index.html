@@ -40,21 +40,23 @@
 												src="content/amateur-selfie-stick.jpg" alt="Любительская селфи палка" width="39"
 												height="43"></a>
 										<p class="cart-item-name">Любительская <br> селфи-палка</p>
-										<button class="cart-item-close"><span class="visually-hidden">Удалить из корзины</span></button>
+										<button class="cart-item-close" type="button"><span class="visually-hidden">Удалить из
+												корзины</span></button>
 									</li>
 									<li class="cart-item">
 										<a class="cart-image-link" href="#"><img class="cart-item-image"
 												src="content/professional-selfie-stick.jpg" alt="Любительская селфи палка" width="39"
 												height="43"></a>
 										<p class="cart-item-name">Профессиональная <br> селфи-палка</p>
-										<button class="cart-item-close"><span class="visually-hidden">Удалить из корзины</span></button>
+										<button class="cart-item-close" type="button"><span class="visually-hidden">Удалить из
+												корзины</span></button>
 									</li>
 								</ul>
 								<ul class="cart-total">
 									<li class="cart-total-items">Товаров: 2</li>
 									<li class="cart-total-price">Сумма: 2000 ₽</li>
 								</ul>
-								<button class="cart-open-button">Открыть корзину</button>
+								<button class="cart-open-button" type="button">Открыть корзину</button>
 							</div>
 						</div>
 					</li>
@@ -85,17 +87,15 @@
 							</li>
 						</ul>
 					</li>
-					<div class="navigation-lower-right-wrapper">
-						<li class="navigation-item">
-							<a href="delivery.html" class="navigation-link">Доставка</a>
-						</li>
-						<li class="navigation-item">
-							<a href="garanty.html" class="navigation-link">Гарантия</a>
-						</li>
-						<li class="navigation-item">
-							<a href="contact.html" class="navigation-link">Контакты</a>
-						</li>
-					</div>
+					<li class="navigation-item nav-delivery">
+						<a href="delivery.html" class="navigation-link">Доставка</a>
+					</li>
+					<li class="navigation-item nav-warranty">
+						<a href="garanty.html" class="navigation-link">Гарантия</a>
+					</li>
+					<li class="navigation-item nav-contacts">
+						<a href="contact.html" class="navigation-link">Контакты</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -196,17 +196,17 @@
 				<div class="container">
 					<ol class="slider-pagination">
 						<li class="slider-pagination-item">
-							<button class="slider-pagination-button slider-pagination-button-current">
+							<button class="slider-pagination-button slider-pagination-button-current" type="button">
 								<span class="visually-hidden">1 фото</span>
 							</button>
 						</li>
 						<li class="slider-pagination-item">
-							<button class="slider-pagination-button">
+							<button class="slider-pagination-button" type="button">
 								<span class="visually-hidden">2 фото</span>
 							</button>
 						</li>
 						<li class="slider-pagination-item">
-							<button class="slider-pagination-button">
+							<button class="slider-pagination-button" type="button">
 								<span class="visually-hidden">3 фото</span>
 							</button>
 						</li>
@@ -219,23 +219,62 @@
 			<!-- Начало списка категорий каталога -->
 
 			<section class="products">
+				<h2 class="visually-hidden">Категории</h2>
 				<div class="container">
-					<h2 class="visually-hidden">Категории</h2>
-					<div class="products-pictures">
-						<div class="product-block-1"></div>
-						<div class="product-block-1"></div>
-						<div class="product-block-1"></div>
-						<div class="product-block-1"></div>
-						<div class="product-block-1"></div>
-						<div class="product-block-1"></div>
-					</div>
 					<ul class="products-list">
-						<li class="products-item">Виртуальная <br> реальность</li>
-						<li class="products-item">Моноподы <br> для селфи</li>
-						<li class="products-item">Экшн-камеры</li>
-						<li class="products-item">Фитнес-браслеты</li>
-						<li class="products-item">Умные часы</li>
-						<li class="products-item">Квадрокоптеры</li>
+						<li class="products-item">
+							<a class="products-item-link" href="#">
+								<div class="product-img-wrapper">
+									<img class="products-item-img" src="/images/virtual-reality.svg" alt="Виртуальная реальность"
+										width="97" height="55">
+								</div>
+								<p class="products-item-name">Виртуальная реальность</p>
+							</a>
+						</li>
+						<li class="products-item">
+							<a class="products-item-link" href="#">
+								<div class="product-img-wrapper">
+									<img class="products-item-img monopods-img" src="/images/monopods-for-selfie.svg"
+										alt="Моноподы для селфи" width="86" height="117">
+								</div>
+								<p class="products-item-name">Моноподы<br>для селфи</p>
+							</a>
+						</li>
+						<li class="products-item">
+							<a class="products-item-link" href="#">
+								<div class="product-img-wrapper">
+									<img class="products-item-img" src="/images/action-camera.svg" alt="Экшн-камеры" width="71"
+										height="87">
+								</div>
+								<p class="products-item-name">Экшн-камеры</p>
+							</a>
+						</li>
+						<li class="products-item">
+							<a class="products-item-link" href="#">
+								<div class="product-img-wrapper">
+									<img class="products-item-img" src="/images/fintes-bracelets.svg" alt="Фитнес-браслеты" width="107"
+										height="65">
+								</div>
+								<p class="products-item-name">Фитнес-браслеты</p>
+							</a>
+						</li>
+						<li class="products-item">
+							<a class="products-item-link" href="#">
+								<div class="product-img-wrapper">
+									<img class="products-item-img" src="/images/smart-watch.svg" alt="Умные часы" width="56" height="98">
+								</div>
+								<p class="products-item-name">Умные часы</p>
+							</a>
+						</li>
+						<li class="products-item">
+							<a class="products-item-link" href="#">
+								<div class="product-img-wrapper">
+									<img class="products-item-img" src="/images/quadrocopters.svg" alt="Квадрокоптеры" width="132"
+										height="69">
+								</div>
+								<p class="products-item-name">Квадрокоптеры</p>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -249,9 +288,15 @@
 					<h2 class="visually-hidden">Сервисы</h2>
 					<div class="services-wrapper">
 						<ul class="services-tabs">
-							<li class="services-tab-item-current"><a class="services-tab-item-link">Доставка</a></li>
-							<li class="services-tab-item"><a class="services-tab-item-link">Гарантия</a></li>
-							<li class="services-tab-item"><a class="services-tab-item-link">Кредит</a></li>
+							<li class="services-tab-item-current">
+								<a class="services-tab-item-link" tabindex="0">Доставка</a>
+							</li>
+							<li class="services-tab-item">
+								<a class="services-tab-item-link" tabindex="0">Гарантия</a>
+							</li>
+							<li class="services-tab-item">
+								<a class="services-tab-item-link" tabindex="0">Кредит</a>
+							</li>
 						</ul>
 						<ul class="services-tabs-content">
 							<li class="services-tab-content">
@@ -299,13 +344,21 @@
 						</div>
 						<strong class="company-header-title">Доставим редкий товар под заказ</strong>
 						<div class="company-info-button">
+							<svg class="info-button" width="2" height="12" viewBox="0 0 2 12" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<path d="M2 0H0V2H2V0Z" fill="black" />
+									<path d="M2 4H0V12H2V4Z" fill="black" />
+								</g>
+							</svg>
 						</div>
 					</header>
 					<div class="company-wrapper">
 						<div class="company-about">
 							<div class="company-decoration-line"></div>
 							<h3 class="company-about-title">О нас</h3>
-							<p class="company-about-description-1">Огромный выбор гаджетов не оставит равнодушным гика, который есть
+							<p class="company-about-description-1">Огромный выбор гаджетов не оставит равнодушным<br>гика, который
+								есть
 								в каждом из нас.</p>
 							<p class="company-about-description-2">Мы можем доставить ваш товар в самые отдалённые уголки России
 								транспортными компаниями:</p>
@@ -330,7 +383,7 @@
 								<p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 								<a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 							</address>
-							<p><strong>Время работы</strong></p>
+							<p class="contacts-worktime"><strong>Время работы</strong></p>
 							<ul class="contacts-schedule">
 								<li>пн—пт: с 10:00 до 22:00</li>
 								<li>сб—вс: с 10:00 до 19:00</li>
@@ -475,61 +528,62 @@
 			<section class="modal-content">
 				<div class="modal-title-wrapper">
 					<h2 class="modal-title">Доставка под заказ</h2>
-					<button class="modal-close-button">
+					<button class="modal-close-button" type="button">
 						<span class="visually-hidden">Закрыть</span>
 					</button>
 				</div>
 				<form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
 					<div class="form-first-row">
 						<label for="auth-name">Ваше имя:
-							<p class="field-group">
+							<span class="field-group">
 								<input class="auth-name-field field" type="text" id="auth-name" name="auth-name"
 									placeholder="Введите имя">
-							</p>
+							</span>
 						</label>
-						<label for="auth-email">Ваш e-mail:
-							<p class="field-group">
+						<label class="auth-email" for="auth-email">Ваш e-mail:
+							<span class="field-group">
 								<input class="auth-email-field field" type="email" id="auth-email" name="auth-email"
 									placeholder="почта">
-							</p>
-							<p class="email-field-error">Забавный у вас адрес</p>
+							</span>
+							<span class="email-field-error">Забавный у вас адрес</span>
 						</label>
 					</div>
 
 					<div class="form-second-row">
 						<label for="auth-delivery">Что нужно привезти:
-							<p class="field-group">
+							<span class="field-group">
 								<input class="auth-delivery-field field" type="text" id="auth-delivery" name="auth-delivery"
 									placeholder="В свободной форме">
-							</p>
+							</span>
 						</label>
 						<span class="auth-quantity-wrapper">
 							<label class="auth-quantity-wrapper" for="auth-quantity">Количество:
 								<span class="tooltip">
-									<button class="tooltip-toggle" aria-labelledby="tooltip-label">
-										<svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<button class="tooltip-toggle" aria-labelledby="tooltip-label" type="button" id="auth-quantity">
+										<svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
 											<circle cx="13" cy="13" r="13" fill="#FFE17F" />
 											<path d="M14 7H12V9H14V7Z" fill="black" />
 											<path d="M14 11H12V19H14V11Z" fill="black" />
 										</svg>
 									</button>
-									<span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+									<span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+										Привезём сколько получится по требованиям к провозу багажа.</span>
 								</span>
-								<p class="field-group quantity-buttons-wrapper">
-									<button class="quantity-minus-button">
-										<svg class="minus-icon" width="16" height="2" viewBox="0 0 16 2" xmlns="http://www.w3.org/2000/svg">
-											<path d="M16 0H0V2H16V0Z" />
-										</svg>
-									</button>
-									<input class="quantity-number" type="number" id="auth-number" name="auth-number" placeholder="1">
-									<button class="quantity-plus-button">
-										<svg class="plus-icon" width="16" height="16" viewBox="0 0 16 16"
-											xmlns="http://www.w3.org/2000/svg">
-											<path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
-										</svg>
-									</button>
-								</p>
 							</label>
+							<span class="field-group quantity-buttons-wrapper">
+								<button class="quantity-minus-button" type="button">
+									<svg class="minus-icon" width="16" height="2" viewBox="0 0 16 2" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 0H0V2H16V0Z" />
+									</svg>
+								</button>
+								<input class="quantity-number" type="number" id="auth-number" name="auth-number" placeholder="1">
+								<button class="quantity-plus-button" type="button">
+									<svg class="plus-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" />
+									</svg>
+								</button>
+							</span>
 						</span>
 					</div>
 					<button class="auth-button">Отправить</button>
