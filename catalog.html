@@ -19,9 +19,11 @@
 			</a>
 			<div class="upper-menu">
 				<form action="https://echo.htmlacademy.ru/courses" method="GET" class="search">
-					<label for="search-site" class="search-icon"></label>
-					<input type="search" name="sitesearch" id="search-site" placeholder="Текст поиска">
-					<input type="submit" value="Найти">
+					<div class="search-first-field" tabindex="0">
+						<label for="search-site" class="search-icon"></label>
+						<input type="search" name="sitesearch" id="search-site" placeholder="Текст поиска" tabindex="1">
+					</div>
+					<div class="search-second-field-wrapper" tabindex="0"><input class="search-second-field" type="submit" value="Найти" tabindex="1"></div>
 				</form>
 				<ul class="user-menu catalog-user-menu">
 					<li class="navigation-item">
