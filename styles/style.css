@@ -1821,7 +1821,8 @@ transition: 0.3s;
 	position: relative;
 	margin-left: -63px;
 	margin-top: -1px;
-	transition: 0.3s
+	transition: 0.3s;
+	cursor: pointer;
 }
 
 .sorting-control::after {
